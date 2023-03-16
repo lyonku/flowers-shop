@@ -1,6 +1,6 @@
-.App {
+/* .App {
   text-align: center;
-}
+} */
 
 .App-logo {
   height: 40vmin;
@@ -35,4 +35,419 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.section-center {
+  background-color: #efefef;
+  width: 100%;
+  height: 700px;
+  /* position: relative; */
+  /* display: flex; */
+  /* overflow: hidden; */
+}
+
+.lavkaImg {
+  width: 600px;
+  border-radius: 10px;
+}
+
+.ymaps-2-1-79-gototech {
+  display: none !important;
+}
+
+p.articul {
+  font-size: 10pt !important;
+}
+p.itemName {
+  font-weight: 450 !important;
+  text-overflow: ellipsis;
+  overflow: hidden;
+  white-space: nowrap;
+  /* font-size: 16pt !important; */
+}
+
+.swiperImg {
+  cursor: pointer;
+  width: 150px;
+}
+
+.mySwiper {
+  display: flex;
+  /* max-width: 500px; */
+  width: 90%;
+}
+
+.category {
+  font-weight: 340 !important;
+  cursor: pointer !important;
+}
+
+div.categories {
+  width: auto !important;
+  display: flex;
+  gap: 10px;
+}
+
+.categories-wrap {
+  margin-bottom: 20px;
+  width: 100% !important;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+div.priceSort {
+  display: flex;
+  gap: 10px;
+  width: auto;
+}
+
+div.chosen {
+  font-weight: 500 !important;
+  color: #80002f !important;
+}
+
+.priceSort-item {
+  cursor: pointer;
+}
+
+.priceSort-item:hover {
+  font-weight: 400 !important;
+  color: #80002f !important;
+}
+
+a.chosen {
+  font-weight: 500 !important;
+  color: #80002f !important;
+}
+
+a.category:hover {
+  font-weight: 500 !important;
+  color: #80002f !important;
+}
+
+.carousel-inner {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: 1.5s;
+}
+
+.carousel-inner.activeSlide {
+  opacity: 1;
+  transform: translateX(0);
+}
+
+.carousel-inner.lastSlide {
+  transform: translateX(-100%);
+}
+
+.carousel-inner.nextSlide {
+  transform: translateX(100%);
+}
+
+.SwiperSlide .col-md-4 {
+  width: auto;
+}
+
+.recomendation .mySwiper {
+  width: 100%;
+
+  margin: 0 !important;
+  padding-bottom: 20px !important;
+}
+
+div.modalFind {
+  z-index: 999;
+  height: 100vh;
+  width: 100vw;
+  background-color: rgba(0, 0, 0, 0.4);
+  position: fixed;
+  top: 0;
+  left: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.modalFind__container {
+  position: relative;
+  transition: 1.5s;
+  width: 80%;
+  height: 80%;
+  background-color: #efefef;
+  border-radius: 30px;
+}
+
+.modalClose {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+}
+
+.modalFind__container-wrap {
+  height: 100%;
+
+  box-sizing: border-box;
+  padding: 70px 80px;
+}
+
+.modalFind__container-wrap .form-control,
+.btn {
+  height: 40px;
+}
+
+.busketTitle {
+  padding: 20px 0 0 40px;
+}
+
+.busketTitle__container-wrap {
+  height: calc(100% - 300px);
+
+  padding: 10px 40px 10px 40px;
+}
+
+.modalFind__container-wrap2 {
+  width: 100%;
+  height: 100%;
+  overflow-y: auto;
+  overflow-x: hidden;
+  margin-top: 20px;
+}
+
+.busketTotal-wrap {
+  width: 100%;
+
+  position: absolute;
+  bottom: 0;
+}
+
+.busketTotal {
+  padding: 10px 40px 30px 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.busketTotal-summ {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: column;
+  /* gap: 20px; */
+}
+
+div.busketItem {
+  /* height: 150px; */
+  width: 100% !important;
+  display: flex;
+  flex-direction: row;
+}
+
+.busketItem-img {
+  max-width: 100px;
+}
+
+div.busketItem-wrap {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: row;
+  /* padding: 10px; */
+}
+
+.busketTitle__container-wrap .row {
+  overflow: hidden;
+  gap: 10px;
+}
+
+div.busketItem-text {
+  width: 600px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  padding: 20px 20px 10px 20px;
+  align-self: flex-start;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.busketItem-text .itemName {
+  overflow: hidden;
+
+  color: black;
+  font-size: 20pt !important;
+}
+
+.busketItem-right {
+  padding-right: 20px;
+  gap: 100px;
+  display: flex;
+  align-items: center;
+}
+
+.busketItem-left {
+  display: flex;
+  align-items: center;
+}
+
+.formImput {
+  overflow: hidden;
+  padding: 30px;
+}
+
+.modalFind .formImput {
+  width: 100%;
+}
+
+.modalFind .needs-validation {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  gap: 50px;
+}
+
+.order {
+  flex-direction: column;
+  align-items: flex-start;
+}
+
+.busketTitle__container-wrap.true {
+  height: calc(100% - 640px);
+}
+
+.order-wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.oneOrder .btn {
+  margin-left: 20px;
+}
+
+.Goods .mySwiper {
+  width: 100%;
+}
+
+.Goods .swiper-slide {
+  width: 200px !important;
+}
+
+@media (max-width: 1000px) {
+  .section-center {
+    height: 1000px !important;
+  }
+
+  .openMenu {
+    display: flex !important;
+  }
+
+  .categories-wrap {
+    align-items: center;
+  }
+
+  div.categories {
+    flex-direction: column;
+    margin-bottom: 20px;
+  }
+
+  div.priceSort {
+    align-items: center;
+    width: 300px;
+  }
+}
+
+@media (max-width: 750px) {
+  .section-center {
+    height: 1200px !important;
+  }
+
+  .navbar .logo {
+    word-wrap: break-word;
+    font-size: 20pt !important;
+  }
+
+  .busketTotal > a {
+    display: none;
+  }
+
+  .busketTotal-summ .btn {
+    align-self: start;
+  }
+
+  .busketTitle__container-wrap {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 650px) {
+  .busketItem-left {
+    flex-direction: column;
+  }
+
+  div.busketItem-text {
+    width: 300px !important;
+  }
+}
+
+@media (max-width: 500px) {
+  .section-center {
+    height: 1400px !important;
+  }
+
+  .swiperImg {
+    width: 100px;
+  }
+}
+
+@media (max-width: 1500px) {
+  div.busketItem-text {
+    width: 400px;
+  }
+}
+
+@media (max-width: 1250px) {
+  div.busketItem-text {
+    width: 400px;
+  }
+
+  .busketItem-right {
+    gap: 20px;
+  }
+}
+
+@media (max-width: 1000px) {
+  div.busketItem-text {
+    width: 400px;
+  }
+
+  .busketItem-right {
+    gap: 20px;
+  }
+
+  div.busketItem-wrap {
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .busketItem-right {
+    align-self: end;
+    padding: 10px;
+  }
+}
+
+.login {
+  padding-top: 100px;
+  padding-bottom: 100px !important;
+  width: 30%;
+  height: 100%;
+}
+
+.modalFind__container {
 }
